@@ -4,7 +4,7 @@
   "description": "webpack2 starter kit",
   "main": "index.js",
   "scripts": {
-    "start": "npm run dev",
+    "start": "webpack --watch & webpack-dev-server --inline --progress --colors",
     "dev": "webpack-dev-server",
     "prod": "npm run clean && NODE_ENV=production node_modules/webpack/bin/webpack.js -p --progress --colors",
     "clean": "rimraf ./dist/*"
