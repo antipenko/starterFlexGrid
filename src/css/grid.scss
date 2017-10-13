@@ -1,0 +1,75 @@
+*{
+  box-sizing: border-box;
+}
+.row{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: .5em;
+  border:1px solid red;
+  padding: 20px;
+
+}
+
+// если исп просто column то все элементы внутри row равномерно заполнят его
+.column{
+  flex:1;
+  padding: 10px;
+  margin:0 0 .5em;
+  border: 1px solid green;
+}
+-12{
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+-11{
+  flex: 0 0 91.66667%;
+  max-width: 91.66667%;
+}
+-10{
+  flex: 0 0 83.33333%;
+  max-width: 83.33333%;
+}
+-9{
+  flex: 0 0 75%;
+  max-width: 75%
+}
+-8{
+  flex: 0 0 66.66667%;
+  max-width: 66.66667%;
+}
+-7{
+  flex: 0 0 58.33333%;
+  max-width: 58.33333%;
+}
+-6{
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+-5{
+  flex: 0 0 41.66667%;
+  max-width: 41.66667%;
+}
+-4{
+  flex: 0 0 33.33333%;
+  max-width: 33.33333%;
+}
+-3{
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+-2{
+  flex: 0 0 16.66667%;
+  max-width: 16.66667%;
+}
+-1{
+  flex: 0 0 8.3333%;
+  max-width: 8.3333%;
+}
+@media (min-width: 768px){
+  .row{
+    flex-direction: row;
+  }
+  .column{
+    margin: 0 0 0;
+  }
+}
