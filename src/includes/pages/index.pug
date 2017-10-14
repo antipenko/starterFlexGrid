@@ -1,11 +1,12 @@
 .row
-    .column h1 Header1
+    .column
+        h1.logo
+            a(href='#') Logo
+    .column
+        nav
+            ul.breadcrumbs
+                each breadcrumb in ['Главная', 'Магазин', 'Барабанные палочки Vater GW2BN']
+                    li
+                        a= breadcrumb
 .row
     .column.col-6
-        ul
-            li lorem
-            li lorem2
-            li lorem3
-    .column.col-6
-        h2 header@
-        p   loremloremloremlorem
