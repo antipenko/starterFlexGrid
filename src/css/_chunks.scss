@@ -1,8 +1,10 @@
 /*===== Variables =====*/
 
 $text: #000;
+$container: 100%;
+$main-text-color: #2d2d2d;
 
-
+$light-gray: #cacaca;
 /*===== Mixins =====*/
 @mixin clear() {
   &:after {

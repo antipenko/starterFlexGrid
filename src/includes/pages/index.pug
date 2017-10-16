@@ -1,12 +1,25 @@
-.row
-    .column
-        h1.logo
-            a(href='#') Logo
-    .column
-        nav
-            ul.breadcrumbs
-                each breadcrumb in ['Главная', 'Магазин', 'Барабанные палочки Vater GW2BN']
-                    li
-                        a= breadcrumb
-.row
-    .column.col-6
+section.section-home.flex
+    .row.container
+        .col-5.home
+            h2.home-h2 Украинская федерация пляжного волейбола
+            include ../components/socials
+section.section-announce.container
+    h2.section-header.row
+        span Анонсы
+    .announces-slider.row
+        .announce
+            h3.announce-title с 25 октября пл 6 ноября состоится турнир по пляжному волейболу
+            a.announce-link Подробнее
+        .announce
+            h3.announce-title с 25 октября пл 6 ноября состоится турнир по пляжному волейболу
+            a.announce-link Подробнее
+        .announce
+            h3.announce-title с 25 октября пл 6 ноября состоится турнир по пляжному волейболу
+            a.announce-link Подробнее
+        .announce
+            h3.announce-title с 25 октября пл 6 ноября состоится турнир по пляжному волейболу
+            a.announce-link Подробнее
+
+section.section-news
+
+

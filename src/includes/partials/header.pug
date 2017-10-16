@@ -1,1 +1,16 @@
-.header
+header.vb-header
+    .container.row.vertical-center
+        .col-12.medium-4
+            h1.logo
+                a(href='#')
+                    //img(src="img/logo.svg" alt="beach voleyball ukraine")
+                    include logo.svg
+
+        .col-12.medium-8
+            nav
+                ul.menu.row
+                    each menu in ['Инфо', 'Календарь', 'рейтинг игроков', 'анонсы', 'пресса', 'судьи', 'контакты']
+                        li.menu-item
+                            a.menu-link=menu
+
+
