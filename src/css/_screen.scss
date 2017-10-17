@@ -47,6 +47,18 @@ body, html{
     color: $main-text-color;
     text-transform: uppercase;
     font-weight: 600;
+    -webkit-transition: opacity .3s;
+    -moz-transition: opacity .3s;
+    -ms-transition: opacity .3s;
+    -o-transition: opacity .3s;
+    transition: opacity .3s;
+  }
+  &-item{
+    &:hover{
+      .menu-link{
+        opacity: .7;
+      }
+    }
   }
 }
 .vb-header{
@@ -59,15 +71,35 @@ body, html{
   border-bottom-right-radius: 20% 90%;
   overflow: hidden;
 }
+.sticky{
+  height: 90px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  transition: .4s;
+  z-index: 99;
+  .container{
+    padding:0 20px;
+  }
+}
 .section{
   &-home{
     background-image: url('../img/home-baner.jpg');
     background-size: auto;
     height: 100vh;
   }
+  &-announce{
+    padding-bottom: 100px;
+  }
+  &-news{
+    text-transform: uppercase;
+    padding-bottom: 100px;
+  }
   &-header{
-    padding-left: 20px;
+    margin-left: 40px;
+    padding-left: 0;
     position: relative;
+    text-transform: uppercase;
     span{
       display: inline-block;
       background-color: #fff;
@@ -79,6 +111,7 @@ body, html{
       background-color: $light-gray;
       height:1px;
       width:100%;
+      left: 0;
       top:50%;
       z-index:-1;
     }
@@ -122,5 +155,26 @@ body, html{
     display: block;
     text-align: right;
     font-weight:600;
+  }
+}
+.news{
+  border: 1px solid #d7d7d7;
+  border-radius: 4px;
+  &-img{
+    height:260px;
+    width: 100%;
+    background-size: cover;
+  }
+  &-info{
+    background-color: #fff;
+    padding: 20px;
+  }
+  &-title{
+    margin-bottom: 40px;
+  }
+  &-time{
+    color: #8e8e8e;
+    font-size: 1.25rem;
+    font-weight:400;
   }
 }
