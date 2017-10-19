@@ -13,13 +13,13 @@
 .row {
   display: flex;
   flex-direction: column;
-  padding: 20px;
   margin:auto;
 }
 .container{
+  width:360px;
   max-width: calc( 100% - 40px);
   margin:auto;
-  //overflow: hidden;
+  padding:0 15px;
 }
 // если исп просто column то все элементы внутри row равномерно заполнят его
 .column, [class^="col-"] {
@@ -79,6 +79,10 @@
 }
 
 @media (min-width: 768px) {
+  .container{
+    width:750px;
+    max-width: calc(100% - 40px);
+  }
   .row {
     flex-direction: row;
     //max-width: $container;
@@ -140,7 +144,7 @@
     justify-content: space-between;
    }
   .container{
-    width: calc(100% - 20px);
+    min-width:1170px;
     max-width: 1330px;
   }
   .column {

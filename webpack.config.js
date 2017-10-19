@@ -74,7 +74,7 @@ const
             }),
             new ExtractTextWebpackPlugin({
                 filename: 'css/style.css',
-                disable: !isProd
+                //disable: !isProd
             }),
             new OptimizeCssAssetsPlugin()
         ]

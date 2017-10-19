@@ -1,0 +1,16 @@
+@media (min-width: 1170px){
+  .vb-header{
+    height: 160px;
+  }
+  .menu{
+    display: flex;
+  }
+  .slick{
+    &-prev{
+      //left:-47px;
+    }
+    &-next{
+      //right: -47px;
+    }
+  }
+}
