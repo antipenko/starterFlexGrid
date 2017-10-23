@@ -4,4 +4,13 @@
       height: 12.77vw;
     }
   }
+//  section on home
+  .section{
+    &-facts{
+      margin-right: 50px;
+    }
+    &-rating{
+      margin-left: 50px;
+    }
+  }
 }

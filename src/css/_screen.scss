@@ -45,7 +45,7 @@ body, html{
   display: none;
   &-link{
     font-size: .9375rem;
-    color: $main-text-color;
+    color: #fff;
     text-transform: uppercase;
     font-weight: 600;
     -webkit-transition: opacity .3s;
@@ -66,17 +66,15 @@ body, html{
   width: 100%;
   position: fixed;
   display: flex;
-  background-color: #fff;
   height: 85px;
-  border-bottom-left-radius: 20% 90%;
-  border-bottom-right-radius: 20% 90%;
+  //border-bottom-left-radius: 20% 90%;
+  //border-bottom-right-radius: 20% 90%;
   overflow: hidden;
 }
 .sticky{
   height: 90px;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
+  background-color: #91bfff;
+  border-bottom-left-radius: 382px 109px;
   transition: .4s;
   z-index: 99;
   .container{
@@ -89,6 +87,7 @@ body, html{
     background-size: auto;
     height: 100vh;
     margin-bottom: 65px;
+    border-bottom-left-radius: 382px 109px;
   }
   &-announce{
     padding-bottom: 100px;
@@ -98,7 +97,6 @@ body, html{
     padding-bottom: 100px;
   }
   &-header{
-    margin-left: 40px;
     margin-bottom: 40px;
     padding-left: 0;
     position: relative;
@@ -186,7 +184,23 @@ body, html{
 }
 // home facts
 .fact{
-
+  &-list{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+    margin-top: 70px;
+    background-image: url('../img/fact-background.png');
+    background-size: auto 180px;
+    background-repeat: round;
+    background-repeat-x: no-repeat;
+    & > *{
+      width: 55%;
+      transform: translateY(-20px);
+    }
+  }
+  &-item{
+    padding:50px 0;
+  }
   &-title{
     color:  #91bfff;
     font-size: 20px;
@@ -221,3 +235,28 @@ body, html{
     font-weight: 300;
   }
 }
+.table{
+  &-row{
+    border-bottom: 12px solid #fff;
+  }
+  &-cell{
+    p {
+      //background-color:  #91bfff;
+      padding:18px 20px 14px;
+    }
+  }
+  &-name{
+    width:80%;
+    border-right:3px solid #fff;
+    p{
+      border-radius: 4px 0 0 4px;
+    }
+  }
+  &-points{
+    p{
+      text-align: center;
+      border-radius: 0 4px 4px 0;
+    }
+  }
+}
+@include background-row();

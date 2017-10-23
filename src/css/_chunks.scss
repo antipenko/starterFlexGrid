@@ -14,4 +14,22 @@ $light-gray: #cacaca;
   }
 }
 
+@mixin background-row() {
+  @for $i from 1 through 10 {
+    .table {
+      &-row:nth-child(#{$i}) p {
+        @if $i == 1 {
+          background-color: rgba(145, 191, 255, 1);
+        } @else {
+          @if $i >= 7 {
+            background-color: rgba(145, 191, 255, .4);
+          } @else {
+            background-color: rgba(145, 191, 255, 1-$i/10+0.1);
+          }
+        }
+      }
+    }
+  }
+}
+
 /*===== Keyframes =====*/

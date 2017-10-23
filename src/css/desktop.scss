@@ -1,6 +1,10 @@
 @media (min-width: 1170px){
   .vb-header{
-    height: 160px;
+    padding-top: 43px;
+    height: auto;
+  }
+  .sticky{
+    padding: 10px 0;
   }
   .menu{
     display: flex;
